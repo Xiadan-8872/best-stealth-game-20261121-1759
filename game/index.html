@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIGHTSHIFT — The Meridian Vault</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0d12; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #e8ecf4;
+  }
+  h1 { font-size: 20px; margin: 14px 0 4px; letter-spacing: 2px; }
+  p.sub { margin: 0 0 12px; color: #8b93a7; font-size: 13px; }
+  canvas {
+    width: min(1280px, 96vw);
+    height: auto;
+    background: #10131a;
+    border: 1px solid #2c3242;
+    border-radius: 6px;
+    image-rendering: auto;
+  }
+  .keys { margin-top: 12px; font-size: 13px; color: #8b93a7; text-align: center; }
+  .keys b { color: #e8ecf4; }
+</style>
+</head>
+<body>
+<h1>NIGHTSHIFT — THE MERIDIAN VAULT</h1>
+<p class="sub">A top-down stealth game · 5 floors · 2 guard types · cameras · drones · ghost bonus</p>
+<canvas id="game" width="1280" height="800"></canvas>
+<p class="keys">
+  <b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sprint (loud) &nbsp;·&nbsp; <b>C</b> crouch (silent, hidden in bushes)<br>
+  <b>Q</b> or <b>click</b> toss a coin &nbsp;·&nbsp; <b>E</b> smoke puff (2 per floor) &nbsp;·&nbsp; <b>Space</b> start / continue &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>R</b> restart floor &nbsp;·&nbsp; <b>M</b> mute
+</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
